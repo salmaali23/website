@@ -1,0 +1,813 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  position: relative;
+}
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("..//images/slider-02.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.logo a {
+  width: 50%;
+  color: #ff305b;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 18px 0;
+  margin-left: 60px;
+}
+.links {
+  width: 50%;
+  color: white;
+}
+ul li a .red {
+  color: #ff305b;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.linkList {
+  display: flex;
+  padding: 18px 0;
+  justify-content: space-evenly;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+  transition: all 0.4s;
+  text-align: center;
+  margin-right: 10px;
+}
+.links a:hover {
+  color: #ff305b;
+}
+
+.home .homeContent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  align-items: center;
+}
+.home .homeContent h1 {
+  color: #ff305b;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  margin: 0 0 10px;
+}
+.home .homeContent h3 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.home .homeContent h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+/*servicesPage start  */
+.servicesPage {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+.servicesPage .title h2::before {
+  content: "";
+  position: absolute;
+  left: 42.8%;
+  width: 170px;
+  height: 1.5px;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.servicesPage .title h2::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  background-color: red;
+  margin-top: 45px;
+}
+.servicesPage .title h6 {
+  color: transparent;
+  position: relative;
+}
+
+.servicesPage .title h6::before {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  margin-top: 97px;
+  background-color: red;
+}
+
+.servicesPage .cards {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  transition: all 1s;
+}
+
+.servicesPage .cards .card {
+  width: 25%;
+  padding: 20px;
+}
+.cards .card .icon {
+  color: #ff305b;
+  display: block;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.cards .card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.cards .card p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.servicesPage .cards :hover {
+  background-color: white;
+}
+
+.servicesPage .cards .card:hover .icon {
+  transform: scale(1.2);
+}
+*.title h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* servicesPage end */
+
+/* aboutPage start */
+.aboutPage {
+  height: 570px;
+  margin-top: 70px;
+}
+.aboutPage h2 {
+  position: relative;
+}
+.aboutPage h2::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 25px;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.aboutPage .cards {
+  display: flex;
+  justify-content: center;
+}
+.aboutPage .inner {
+  width: 30%;
+  padding: 20px;
+}
+.aboutPage .inner .cardimg img {
+  width: 100%;
+}
+
+.aboutPage .aboutContent {
+  width: 60%;
+  height: 300px;
+  padding: 50px;
+}
+.aboutPage .aboutContent h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 25px;
+  padding-left: 13px;
+  text-transform: uppercase;
+  position: relative;
+}
+.aboutPage .aboutContent p {
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+.aboutPage .aboutList {
+  display: flex;
+}
+.aboutPage ul li span {
+  color: #333333;
+  font-weight: 700;
+}
+.aboutPage ul li {
+  color: #555555;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 25px;
+  white-space: nowrap;
+  font-size: 16px;
+  margin-right: 40px;
+}
+.aboutPage ul {
+  list-style-type: none;
+  padding: 15;
+}
+.button1 > a {
+  background: #ff305b none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition: all 1s;
+}
+.button2 > a {
+  background: #ff305b none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition: all 1s;
+}
+.button1 :hover {
+  background-color: rgb(255, 196, 0);
+}
+.button2 :hover {
+  background-color: rgb(255, 196, 0);
+}
+
+.button1 a {
+  color: #fff;
+}
+.button1 icon {
+  background-color: #fff;
+}
+.button2 a {
+  color: #fff;
+}
+.buttons {
+  display: flex;
+}
+
+.aboutPage .cards .inner .cardimg {
+    position: relative;
+  }
+  
+.aboutPage .cards .inner .cardimg .layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.aboutPage .cards .inner .cardimg:hover .layer {
+    top: 0;
+    opacity: 1;
+}
+
+.aboutPage .cards .inner .cardimg .layer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.aboutPage .cards .inner .cardimg .layer .icon ul li {
+    margin: 0 10px;
+  }
+  
+.aboutPage .cards .inner .cardimg .layer .icon ul li a {
+    color: #fff;
+  }
+.aboutPage .cards .inner .cardimg .border {
+    position: relative;
+    border: 50px solid #000; 
+
+}
+
+
+/* aboutPage end */
+
+/* portfolioPage start */
+*.title h2::before {
+  content: "";
+  position: absolute;
+  left: 42.8%;
+  width: 170px;
+  height: 1.5px;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.portfolioPage .title h2::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  background-color: red;
+  margin-top: 45px;
+}
+.portfolioPage .title h6 {
+  color: transparent;
+  position: relative;
+}
+
+.portfolioPage .title h6::before {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  margin-top: 120px;
+  background-color: red;
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.image-grid .image {
+  width: 33.33%;
+  padding: 10px 20px;
+}
+.image-grid .image img {
+  width: 100%;
+}
+.image-grid .image .content {
+  position: relative;
+}
+.image-grid .image .layer {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.image-grid .image .content:hover .layer {
+  opacity: 0.5;
+}
+.portfolioPage .portfolioButtons button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 0.5px 8px;
+  text-transform: uppercase;
+}
+.portfolioPage h2 {
+  padding: 20px;
+}
+
+/* portfolioPage end */
+/* funfactsPage start */
+.funfactsPage {
+  padding: 60px 0;
+}
+
+.funfactsPage .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.funfactsPage .card {
+  width: 70%;
+  height: 300px;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #f1f1f1;
+  align-items: center;
+}
+.funfactsPage .card h3 {
+  /* margin-top: 95px; */
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.funfactsPage .card h5 {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.funfactsPage .cards .card .icons {
+  color: #ff305b;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+/* FeedbackPage start */
+.feedbackPage {
+  height: 500px;
+  width: 100%;
+}
+.feedbackPage.title h2::before {
+  content: "";
+  position: absolute;
+  left: 42.8%;
+  width: 170px;
+  height: 1.5px;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.feedbackPage .title h2::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  background-color: red;
+  margin-top: 45px;
+}
+.feedbackPage .title h6 {
+  color: transparent;
+  position: relative;
+}
+.feedbackPage .title h6::before {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  margin-top: 100px;
+  background-color: red;
+}
+.feedbackPage .card {
+  width: 67%;
+  margin-left: 230px;
+  height: 250px;
+  background: #f1f1f1 none repeat scroll 0 0;
+  border-radius: 5px;
+  padding: 40px;
+  display: flex;
+  position: relative;
+}
+.feedbackPage .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 80%;
+    background: linear-gradient(to top left, transparent 50%, #ff305b 20%);
+    z-index: 1;
+    border-radius: 5px 0 0 5px;
+  }
+
+.feedbackPage .title h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+.feedbackPage .card a {
+  color: #777777;
+  font-size: 15px;
+}
+.feedbackPage p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 10px 0;
+}
+.feedbackPage .icons {
+  color: rgb(255, 196, 0);
+}
+.feedbackPage .card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.feedbackPage img {
+  border-radius: 50%;
+  width: 100%;
+}
+.feedbackPage .card .content {
+  flex-direction: column;
+}
+.feedbackPage .card .inner {
+  margin-left: 20px;
+}
+.feedbackPage .cardimg {
+  width: 35%;
+  z-index: 999;
+}
+/* end feedbackPage */
+
+/* blogPage start */
+.blogPage .title h2::before {
+  content: "";
+  position: absolute;
+  left: 42.8%;
+  width: 170px;
+  height: 1.5px;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.blogPage .title h2::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  background-color: red;
+  margin-top: 45px;
+}
+.blogPage .title h6 {
+  color: transparent;
+  position: relative;
+}
+
+.blogPage .title h6::before {
+  content: "";
+  position: absolute;
+  left: 46%;
+  width: 70px;
+  height: 0.3px;
+  margin-top: 107px;
+  background-color: red;
+}
+.blogPage {
+    background-color: #f1f1f1;
+
+}
+
+.blogPage .cards {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.card .addVideo {
+    margin-bottom: 20px;
+    width: 100%;
+
+ 
+}
+.blogPage h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.blogPage .cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.blogPage .card {
+  background-color: white;
+  width: 33.33%;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+.blogPage .card a {
+  color: #333333;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 20px;
+ 
+  
+}
+.blogPage .card p {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.blogPage h6 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.blogPage .icon {
+  font-size: 14px;
+}
+.blogPage .read a {
+  font-size: 15px;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: lighter;
+  
+}
+.blogPage .read{
+    margin-bottom: 20px;
+}
+.blogPage .title {
+  background-color: #f1f1f1;
+  height: 20px;
+}
+
+/* blogPage end */
+/* contactPage start */
+.contactPage .title h2::before {
+  content: "";
+  position: absolute;
+  left: 42.8%;
+  width: 170px;
+  height: 1.5px;
+  background-color: red;
+  margin-top: 50px;
+}
+
+.contactPage .title h2::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  background-color: red;
+  margin-top: 45px;
+}
+.contactPage .title h6 {
+  color: transparent;
+  position: relative;
+}
+
+.contactPage .title h6::before {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 70px;
+  height: 0.3px;
+  margin-top: 98px;
+  background-color: red;
+}
+.contactPage {
+    margin-top: 50px;
+}
+
+.contactPage .contact {
+  background-color: #fff;
+}
+.form-control {
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  width: 36%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.contact input {
+  height: 40px;
+  padding: 20px;
+  width: 30%;
+  margin-right: 50px;
+}
+.contact .info {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .info2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.contact .info2 input {
+  margin-top: 30px;
+  width: 76%;
+}
+.contact .info2 textarea {
+  width: 76%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+.button > a {
+  background: #ff305b;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 24px;
+  width: 20px;
+  transition: all 1s;
+}
+.button a {
+  color: #fff;
+  margin-left: 180px;
+}
+.button :hover {
+    background-color: rgb(255, 196, 0);
+  }
+
+/* contactPage end */
+
+/* footerPage start */
+.footerPage {
+  background: #333333 none repeat scroll 0 0;
+  padding: 50px 0;
+  text-align: center;
+
+  margin-top: 100px;
+}
+.copyRight {
+  color: #ffffff;
+  margin: 0;
+}
+.copyRight a {
+  color: #ff305b;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.copyRight a :hover {
+  text-decoration: underline;
+}
+
+.content p {
+  font-size: 16px;
+}
+.footerPage .icons ul li a {
+  color: white;
+  padding: 13px;
+  transition: all 1s;
+  font-size: 16px;
+}
+.footerPage .icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footerPage .icons ul li a :hover {
+  color: #ff305b;
+}
